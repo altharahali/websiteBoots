@@ -1,0 +1,216 @@
+body{
+    font-family: "Roboto", sans-serif;
+  
+}
+:root{
+    --navbarcolor:#248383;
+    --navColor :#d0219e;
+    --section: rgb(246, 238, 238);
+}
+/* start navbar */
+.navbar{
+    background-color: var(--navbarcolor);
+    
+}
+.navbar .navbar-toggler{
+    color: var(--navColor);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.navbar .navbar-toggler:focus{
+    border-color: aqua;
+    box-shadow: none;
+}
+.navbar .navbar-nav .nav-link , .navbar .navbar-brand{
+    color: white;
+}
+.navbar .navbar-brand:hover{
+color: aliceblue;
+}
+
+.man
+{
+    background-color: #cf05a0;
+}
+/* .navbar .navbar-nav .nav-link.active, */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus{
+    color: rgb(16, 241, 241);
+    background-color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+.navbar .search {
+    border-left: 1px solid var(--section);
+}
+
+.search svg{
+    color:var(--section);
+}
+/* end navbar */
+
+
+/* start landing */
+.landing{
+    /* background-image: url('img/school.jpg'); */
+    background-color: var(--navbarcolor);
+    min-height: calc(59vh - 70px);
+}
+
+/* start landing */
+
+
+
+/* start features */
+.main-title::after{
+    content: "";
+    width: 140px;
+    height: 3px;
+    background-color: var(--navColor);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.features .icon-holder{
+    height: 200px;
+}
+
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number{
+font-size: 12rem;
+color:var(--section);
+}
+.features .icon-holder .icon{ 
+    color:var(--navColor);
+    }
+.features .feat h4{
+    color:var(--navbarcolor);
+    }
+/* end features */
+
+
+/* start our work */
+.our-work {
+    background-color: var(--section);
+}
+
+.our-work ul li{
+    padding: 0.5rem 1rem ;
+    cursor: pointer;
+}
+.our-work ul .active{
+    background-color: var(--navColor);
+    color: var(--section);
+}
+.our-work ul li:not(.active):hover{
+    color: rgb(2, 137, 255);
+    font-weight: bolder;
+}
+
+.our-work  .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.our-work  .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(62, 228, 220);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fafcfc;
+    font-size: 1.2rem;
+    transition: 1s;
+    transform: translateX(calc(-100% - 5px));
+
+}
+.our-work .row .box:hover::before{
+    transform: translateX(0);
+}
+/* end our work */
+
+/* start stuff */
+.stuff .description, .team .description{
+    max-width: 500px;
+}
+/* end stuff */
+
+
+/* start team */
+.team{
+    background-color: var(--section);
+}
+
+.team .box h4{
+    background-color: var(--navColor);
+}
+
+/* end team */
+
+/* start subscribe */
+.subscribe
+{
+    background-color:rgb(216, 216, 58);
+}
+.subscribe input
+{
+    border: none ;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]
+{
+    color: black;
+    outline: none;
+    border-radius: 8px;
+    background-color:rgb(225, 220, 89) !important;
+}
+.subscribe input[type="submit"]
+{
+    background-color: rgb(48, 212, 212);
+    color: #fafcfc;
+}
+.subscribe ::placeholder
+{
+    color: white;
+}
+/* end subscribe */
+
+
+/* start footer */
+.footer{
+    background-color: var(--navbarcolor);
+
+}
+/* end footer */
+
+
+
+
+.carousel-indicators [data-bs-target]
+{
+    background-color: aliceblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #170505;
+}
+.carousel-indicators .active{
+    background-color: #cf05a0;
+}
+.modric img{
+    border-radius: 23px;
+}
